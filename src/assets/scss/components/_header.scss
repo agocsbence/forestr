@@ -7,6 +7,9 @@
     padding: 2rem;
     position: fixed;
     z-index: 998;
+    @media screen  and (max-width: $mobile) {
+        padding: 1rem;
+    }
     .navbar-logo {}
     .navbar-toggler {
         border: 0;
@@ -17,28 +20,47 @@
     .navbar-nav {
         position: absolute;
         top: 13vh;
+        left: 0;
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 2rem;
+        @media screen and (max-width: $tablet) {
+            padding-top: 20vh;
+            height: 85vh;
+        }
+        @media screen  and (max-width: $mobile) {
+            width: 100vw;
+            padding: 1rem;
+        }
         .nav-item {
             flex: 1;
             font-size: 120px;
             line-height: 145px;
             font-weight: normal;
             margin-right: 3rem;
+            @media screen and (max-width: $tablet) {
+                font-size: 87px;
+                line-height: 100px;
+            }
+            @media screen  and (max-width: $mobile) {
+                font-size: 67px;
+                line-height: 75px;
+            }
             a {
-                -webkit-text-fill-color: $green; /* Will override color (regardless of order) */
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: $white;
                 white-space: nowrap;
+                @media screen and (min-width: $tablet) {
+                    // -webkit-text-fill-color: $green; /* Will override color (regardless of order) */
+                    // -webkit-text-stroke-width: 2px;
+                    // -webkit-text-stroke-color: $white;
+                }
             }
             &:hover {
                 a {
                     text-decoration: underline;
-                    text-decoration-color: $green;
+                    // text-decoration-color: $green;
                 }
             }
         }

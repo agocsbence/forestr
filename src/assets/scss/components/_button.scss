@@ -7,4 +7,10 @@
     background: $green;
     color: $white;
     text-transform: uppercase;
+    border: 3px solid transparent;
+    &:hover {
+        color: $white;
+        padding: 1.5rem 5rem;
+        border: 3px solid $white;
+    }
 }

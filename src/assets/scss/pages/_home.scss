@@ -1,6 +1,12 @@
 .home-hero-section {
     height: 100vh;
     padding-top: 15vh;
+    @media screen and (max-width: $tablet) {
+        padding-top: 40vh;
+    }
+    @media screen  and (max-width: $mobile) {
+        height: auto;
+    }
 }
 .home-donate {
     height: 120vh;
@@ -12,7 +18,19 @@
     background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
+    @media screen and (max-width: $tablet) {
+        height: 80vh;
+        background-position: bottom center;
+    }
     .btn {
         margin: 6rem 0;
     }
+}
+
+.about-section, .connect-section, .donate-section {
+    padding-top: 15vh;
+    margin-bottom: 20vh;
+}
+.contact-section {
+    padding-top: 15vh;
 }

@@ -1,0 +1,22 @@
+.partners-section {
+    padding-top: 15vh;
+    margin-bottom: 20vh;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .logo {
+        margin-right: 3rem;
+        @media screen and (max-width: $mobile) {
+            width: 110px;
+            margin-right: .8rem;
+        }
+    }
+    .name {
+        text-transform: uppercase;
+        font-size: 38px;
+        line-height: 42px;
+    }
+}

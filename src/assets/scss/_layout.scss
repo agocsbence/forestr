@@ -8,7 +8,7 @@ section {
     z-index: 1;
     padding: 2rem;
     @media screen and (max-width: $mobile) {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 }
 .grid {
@@ -18,7 +18,7 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-gap: 3rem;
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             grid-template-columns: 1fr;
         }
     }
@@ -53,6 +53,9 @@ section {
         @media screen and (max-width: $mobile) {
             grid-template-columns: 1fr;
         }
+    }
+    .right-block, .left-block {
+        img {width: 100%;}
     }
 }
 

@@ -1,10 +1,16 @@
 .news-list {
     .news-post {
         margin-bottom: 6rem;
-        .news-image {}
+        .news-image {
+            @media screen and (max-width: $tablet) {
+                img { width: 100%; }
+            }
+        }
         .news-text {
             h3 {
-                height: 6rem;
+                @media screen  and (min-width: $mobile) {
+                    height: 6rem;
+                }
             }
         }
         .more {
