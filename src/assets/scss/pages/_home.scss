@@ -3,13 +3,13 @@
     padding-top: 15vh;
 }
 .home-donate {
-    padding: 25vw 0;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('../../assets/img/home_2.svg');
-    background-position: bottom center;
+    background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
     .btn {
