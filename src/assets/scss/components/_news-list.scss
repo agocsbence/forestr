@@ -1,0 +1,30 @@
+.news-list {
+    .news-post {
+        margin-bottom: 6rem;
+        .news-image {}
+        .news-text {
+            h3 {
+                height: 6rem;
+            }
+        }
+        .more {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            width: 100%;
+            a {
+                font-weight: normal;
+                font-size: 85px;
+                line-height: 95px;
+                flex: 1;
+            }
+            span {
+                height: 2px;
+                width: 100%;
+                background: $green;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
