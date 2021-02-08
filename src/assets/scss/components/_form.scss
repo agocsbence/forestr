@@ -13,6 +13,10 @@ form {
         margin-right: 1rem;
         width: calc(50% - 1rem);
         font-size: 20px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            margin-right: 0;
+        }
         &[type="submit"] {
             padding: .7rem 1.5rem;
             line-height: 1;
@@ -30,6 +34,9 @@ form {
     }
     .wide {
         width: calc(100% - 1rem);
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
     }
     textarea { border-radius: 2rem; }                                       
     .policy-wrapper {
@@ -37,6 +44,9 @@ form {
         width: calc(50% - 1rem);
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
     }
     .checkbox, .radio {
         display: block;
