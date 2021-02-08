@@ -5,28 +5,27 @@
 		<title>ForestR Foundation</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-        <link rel="stylesheet" href="./assets/css/style.css?v=1.0.0" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/hamburgers.min.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=1.0.1" type="text/css" />
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
 		
 		<link href="favicon.png" rel="shortcut icon" type="image/x-icon"/>
 		<link href="webclip.png" rel="apple-touch-icon"/>
 	</head>
 	<body class="body">
-
-		<!-- <div class="background-wrapper">
-			<img src="./assets/img/home_1.svg" alt="ForestR foundation">
-		</div> -->
 		
 		<nav class="navbar">
 			<a href="index.html" class="navbar-logo">
-				<img src="./assets/img/logo.png" alt="ForestR Foundation">
+				<img src="./assets/img/logo.svg" alt="ForestR Foundation">
 			</a>
-			<button class="navbar-toggler">
-				<img src="./assets/img/hamburger.png" alt="" class="navbar-toggler-icon">
+			<button class="hamburger hamburger--boring" type="button" aria-label="Menu" aria-controls="navigation">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
 			</button>
-			<div class="navbar-nav slide-right">
-				<div class="nav-item"><a href="">News</a></div>
-				<div class="nav-item"><a href="">Projects</a></div>
+			<div class="navbar-nav slide-right" id="navigation">
+				<div class="nav-item"><a href="news.html">News</a></div>
+				<div class="nav-item"><a href="projects.html">Projects</a></div>
 				<div class="nav-item"><a href="donate.html">Donate</a></div>
 				<div class="nav-item"><a href="connect.html">Connect to</a></div>
 				<div class="nav-item"><a href="partners.html">Partners</a></div>
@@ -36,14 +35,53 @@
 		</nav>
 
 		<div class="page-content">
+		<!-- HEADER -->
 			
 			<section class="connect-section first-section">
 				<h1 class="lead">Connect to</h1>
 				<div class="grid grid-2">
 					<div class="left-block">
-						<h2 class="lead">Join us, be a part of the ForestR Foundation.</h2>
+						<form action="">
+							<input type="text" placeholder="Name" class="wide" required>
+							<input type="email" name="email" id="email" placeholder="Email" class="wide" required>
+							<input type="tel" name="phone" id="phone" placeholder="Phone" class="">
+							<input type="url" name="website" id="website" placeholder="www.YourPage.com" class="">
+							<input type="text" name="subject" id="subject" placeholder="Subject" class="wide">
+							<textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+							<div class="policy-wrapper">
+								<label class="checkbox">checkbox 1
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox">checkbox 2
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+								<br>
+								<label for="user_individual" class="radio">radio 1
+									<input type="radio" name="user_type" id="user_individual">
+									<span class="checkmark"></span>
+								</label>
+								<label for="user_company" class="radio">radio 2
+									<input type="radio" name="user_type" id="user_company">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							
+							<input type="file" name="file" id="file" class="wide">
+
+							<select name="dropdown" id="dropdown" class="wide">
+								<option value="dropdown 1">Dropdown 1</option>
+								<option value="dropdown 2">Dropdown 2</option>
+								<option value="dropdown 3">Dropdown 3</option>
+								<option value="dropdown 4">Dropdown 4</option>
+							</select>
+							
+                            <input type="submit" value="Send" class="">
+						</form>
 					</div>
 					<div class="right-block">
+						<h2 class="lead">Join us, be a part of the ForestR Foundation.</h2>
                         <p>You are welcome to join our international tree planting community.</p>
                         <p>Do you have any superpowers? Or just any practical skills? Do you wish to share it with us?</p>
                         <p>We are always looking for volunteers and members to join our colorful international community.</p>

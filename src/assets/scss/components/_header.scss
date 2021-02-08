@@ -35,7 +35,7 @@
             .hamburger-inner:after { background: $white; }
             &+.navbar-nav {
                 .nav-item a {
-                    background: $green;
+                    background: transparent;
                 }
             }
         }

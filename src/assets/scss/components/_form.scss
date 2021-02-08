@@ -3,20 +3,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    &.pure {
-        input, textarea {
-            border: 3px solid $white;
-            background: transparent;
-            color: $white;
-        }
-        textarea {
-            border-radius: 2rem;
-        }
-        ::placeholder {
-            color: $white;
-        }
-    }
-    input, textarea {
+    input, textarea, select {
         border: 3px solid $green;
         border-radius: 3rem;
         padding: .7rem 1.5rem;
@@ -24,8 +11,8 @@ form {
         color: $green;
         margin-bottom: 1rem;
         margin-right: 1rem;
-        flex-grow: 1;
         width: calc(50% - 1rem);
+        font-size: 20px;
         &[type="submit"] {
             padding: .7rem 1.5rem;
             line-height: 1;
@@ -40,69 +27,70 @@ form {
                 border-color: $white;
             }
         }
-        &.wide {
-            flex-grow: 2;
-            width: calc(100% - 1rem);
-        }
     }
+    .wide {
+        width: calc(100% - 1rem);
+    }
+    textarea { border-radius: 2rem; }                                       
     .policy-wrapper {
         flex-grow: 1;
         width: calc(50% - 1rem);
         display: flex;
         flex-direction: column;
-        .policy {
-            display: block;
-            position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: 22px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            &:hover input ~ .checkmark {
-                background-color: #ffffff50;
-            }
-            input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-                &:checked ~ .checkmark {
-                    background-color: $white;
-                    &:after {
-                        display: block;
-                    }
-                }
-            }
-            .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 25px;
-                width: 25px;
-                border-radius: 50%;
-                border: 2px solid $white;
-                background-color: $blue;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    left: 9px;
-                    top: 5px;
-                    width: 5px;
-                    height: 10px;
-                    border: solid white;
-                    border-width: 0 3px 3px 0;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
-              }
+    }
+    .checkbox, .radio {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:hover input ~ .checkmark {
+            background-color: #ffffff50;
         }
-          
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+                background-color: $green;
+            }
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            border: 2px solid $green;
+            background-color: $white;
+          }
+    }
+    &.pure {
+        input, textarea {
+            border: 3px solid $white;
+            background: transparent;
+            color: $white;
+        }
+        input {
+            &:checked ~ .checkmark {
+                background-color: $white;
+            }
+        }
+        .checkmark {
+            border: 2px solid $white;
+            background-color: $blue;
+        }
+        ::placeholder {
+            color: $white;
+        }
     }
 }
 

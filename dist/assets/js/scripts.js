@@ -4,7 +4,7 @@ const hamburger = document.querySelector(".hamburger"),
       body = document.querySelector('BODY'),
       footer = document.querySelector('footer .social');
 
-if(body.classList.contains("bg--green")) {
+if( body.classList.contains("bg--green") || body.classList.contains("bg--blue")) {
     hamburger.classList.add("content--white");
     footer.classList.add("content--white");
 }
