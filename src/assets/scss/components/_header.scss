@@ -29,6 +29,16 @@
             .hamburger-inner:before { top: -15px; }
             .hamburger-inner:after { bottom: -15px; }
         }
+        &.content--white {
+            .hamburger-inner,
+            .hamburger-inner:before,
+            .hamburger-inner:after { background: $white; }
+            &+.navbar-nav {
+                .nav-item a {
+                    background: $green;
+                }
+            }
+        }
         &.is-active {
             .hamburger-inner:after { bottom: 0; }
         }
@@ -71,11 +81,9 @@
             }
             a {
                 white-space: nowrap;
-                @media screen and (min-width: $tablet) {
-                    // -webkit-text-fill-color: $green; /* Will override color (regardless of order) */
-                    // -webkit-text-stroke-width: 2px;
-                    // -webkit-text-stroke-color: $white;
-                }
+                background: white;
+                border-radius: 4rem;
+                padding: 0 2rem;
             }
             &:hover {
                 a {
