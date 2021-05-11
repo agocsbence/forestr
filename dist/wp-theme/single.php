@@ -5,9 +5,8 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php if( have_rows('slider') ): ?>
-                <?php while( have_rows('slider') ): the_row(); 
-                    $image = the_sub_field('kep'); ?>
-                    <div class="swiper-slide"><img src="<? echo $image; ?>" alt=""></div> 
+                <?php while( have_rows('slider') ): the_row(); ?>
+                    <div class="swiper-slide"><img src="<?php the_sub_field('kep'); ?>" alt=""></div> 
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
