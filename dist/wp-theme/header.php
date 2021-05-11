@@ -16,7 +16,7 @@
 	<body class="body <?php if (is_home()) { echo ' has-bg'; } ?>">
 		
 		<nav class="navbar">
-			<a href="index.html" class="navbar-logo">ForestR Foundation</a>
+			<a href="<?php echo get_home_url(); ?>" class="navbar-logo">ForestR Foundation</a>
 			<button class="hamburger hamburger--boring" type="button" aria-label="Menu" aria-controls="navigation">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
