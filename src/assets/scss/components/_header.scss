@@ -11,8 +11,11 @@
         padding: 1rem;
     }
     .navbar-logo {
-        width: 8rem;
-        height: auto;
+        font-size: 3rem;
+        font-weight: normal;
+        @media screen and (max-width: $tablet) {
+            font-size: 1.6rem;
+        }
     }
     .hamburger {
         .hamburger-box {
@@ -71,6 +74,10 @@
             line-height: 145px;
             font-weight: normal;
             margin-right: 3rem;
+            @media screen and (max-width: $desktop) {
+                font-size: 100px;
+                line-height: 100px;
+            }
             @media screen and (max-width: $tablet) {
                 font-size: 87px;
                 line-height: 100px;

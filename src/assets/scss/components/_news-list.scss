@@ -1,12 +1,26 @@
 .news-list {
     .news-post {
         margin-bottom: 6rem;
-        .news-image {
+        .grid-2 {
             @media screen and (max-width: $tablet) {
-                img { width: 100%; }
+                grid-gap: 3rem;
+            }
+            @media screen and (min-width: $desktop-large) {
+                grid-gap: 10rem;
+            }
+        }
+        .news-image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+                min-height: 300px;
             }
         }
         .news-text {
+            padding-bottom: 6rem;
             h3 {
                 @media screen  and (min-width: $mobile) {
                     height: 6rem;

@@ -16,6 +16,7 @@ footer {
                 flex-direction: column;
             }
             a, a:hover {text-decoration: underline;}
+            img { max-width: 5rem; }
         }
         .social {
             justify-content: flex-end;
