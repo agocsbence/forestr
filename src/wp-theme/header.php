@@ -7,7 +7,7 @@
 
 		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/hamburgers.min.css" type="text/css">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.1" type="text/css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.2" type="text/css" />
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
 		
 		<link href="favicon.png" rel="shortcut icon" type="image/x-icon"/>
