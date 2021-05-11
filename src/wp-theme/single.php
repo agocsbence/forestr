@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="single-section first-section">
+<section class="single-section">
     <div class="grid grid-2">
         <div class="left-block">
             <h1 class="lead"><?php the_title(); ?></h1>

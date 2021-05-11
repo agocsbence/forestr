@@ -28,7 +28,7 @@ get_header();
 
 		<?php
 			//POSTS LOOP
-			$loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 2 ) );
+			$loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3 ) );
 			
 			while ( $loop->have_posts() ) : $loop->the_post(); 
 			
@@ -60,9 +60,7 @@ get_header();
 
 <section class="home-donate">
 	<img src="<?php bloginfo('template_url') ?>/assets/img/mockup.png" alt="ForestR Donate">
-	<a href="" class="btn">
-		Donate
-	</a>
+	<a href="<?php echo esc_url( get_page_link( 15 ) ); ?>" class="btn">Donate</a>
 </section>
 
 <?php get_footer(); ?>

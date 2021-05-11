@@ -23,13 +23,13 @@
 				</span>
 			</button>
 			<div class="navbar-nav slide-right" id="navigation">
-				<div class="nav-item"><a href="news.html">News</a></div>
-				<div class="nav-item"><a href="projects.html">Projects</a></div>
-				<div class="nav-item"><a href="donate.html">Donate</a></div>
-				<div class="nav-item"><a href="connect.html">Get involved</a></div>
-				<div class="nav-item"><a href="partners.html">Partners</a></div>
-				<div class="nav-item"><a href="contact.html">Contact to</a></div>
-				<div class="nav-item"><a href="about.html">About</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 9 ) ); ?>">News</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 11 ) ); ?>">Projects</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 15 ) ); ?>">Donate</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 19 ) ); ?>">Get involved</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 13 ) ); ?>">Partners</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 17 ) ); ?>">Contact to</a></div>
+				<div class="nav-item"><a href="<?php echo esc_url( get_page_link( 7 ) ); ?>">About</a></div>
 			</div>
 		</nav>
 
