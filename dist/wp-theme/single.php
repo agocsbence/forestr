@@ -1,16 +1,34 @@
 <?php get_header(); ?>
 
 <section class="single-section first-section">
-    <!-- <div class="grid grid-2">
-        <div class="left-block">
-            <h1 class="lead"><?php // the_title(); ?></h1>
-        </div>
-        <div class="right-block">
-            <?php // the_excerpt(); ?>
-        </div>
-    </div> -->
     <h1 class="lead"><?php the_title(); ?></h1>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <?php if( have_rows('slider') ): ?>
+                <?php while( have_rows('slider') ): the_row(); 
+                    $image = the_sub_field('kep'); ?>
+                    <div class="swiper-slide"><img src="<? echo $image; ?>" alt=""></div> 
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
     <?php the_content(); ?>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
 </section>
 
 <?php get_footer(); ?>
