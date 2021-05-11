@@ -13,7 +13,7 @@
 		<link href="webclip.png" rel="apple-touch-icon"/>
 		<?php wp_head(); ?>
 	</head>
-	<body class="body has-bg">
+	<body class="body <?php if (is_home()) { echo ' has-bg'; } ?>">
 		
 		<nav class="navbar">
 			<a href="index.html" class="navbar-logo">ForestR Foundation</a>
