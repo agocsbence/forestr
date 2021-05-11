@@ -133,6 +133,14 @@ img {
     height: 100%;
 }
 
+.divider {
+    height: 2px;
+    width: 100%;
+    background: $green;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
 .v-margin-1 {margin: 0 2rem;}
 .margin-bottom-0 { margin-bottom: 0; }
 
