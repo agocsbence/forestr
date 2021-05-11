@@ -17,30 +17,30 @@ gulp.task('styles', function () {
   return gulp.src('src/assets/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
-    .pipe(gulp.dest('dist/assets/css/'));
+    .pipe(gulp.dest('dist/wp-theme/assets/css/'));
 });
 
 gulp.task('imagemin', async function () {
   gulp.src('./src/assets/img/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/assets/img'))
+    .pipe(gulp.dest('./dist/wp-theme/assets/img'))
 });
 
 gulp.task('fonts', function() {
   return gulp.src('src/assets/scss/fonts/**/*')
-    .pipe(gulp.dest('dist/assets/css/fonts/'));
+    .pipe(gulp.dest('dist/wp-theme/assets/css/fonts/'));
 });
 
 gulp.task('scripts', function(){
   return gulp.src('src/assets/js/**/*.js')
     .pipe(concat('scripts.js'))
     .pipe(minify())
-    .pipe(gulp.dest('dist/assets/js'))
+    .pipe(gulp.dest('dist/wp-theme/assets/js'))
 });
 
 gulp.task('copyCSS', function() {
   return gulp.src('src/assets/css/*.css')
-    .pipe(gulp.dest('dist/assets/css/'));
+    .pipe(gulp.dest('dist/wp-theme/assets/css/'));
 });
 
 gulp.task('copyHTML', function() {
@@ -54,13 +54,13 @@ gulp.task('copyPHP', function(){
 });
 
 gulp.task('copyWPimage', function(){
-  return gulp.src('src/screenshot.png')
-    .pipe(gulp.dest('dist/'));
+  return gulp.src('src/wp-theme/screenshot.png')
+    .pipe(gulp.dest('dist/wp-theme/'));
 });
 
 gulp.task('copyWPstyle', function(){
-  return gulp.src('src/style.css')
-    .pipe(gulp.dest('dist/'));
+  return gulp.src('src/wp-theme/style.css')
+    .pipe(gulp.dest('dist/wp-theme/'));
 });
 
 gulp.task('watch', function () {
