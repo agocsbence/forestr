@@ -3,6 +3,7 @@
     <div class="grid grid-2">
         <div class="copyright">
             <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="ForestR Foundation">
+            <div class="margin-1"></div>
             <span>2020 &copy; ForestR Foundation</span>
             <span><a href="">hello@forestrfoundation.com</a></span>
         </div>

@@ -38,6 +38,9 @@ get_header();
         <div class="right-block">
             <p>For more information please get in touch with us <br>
             <a href="">info@forestRfoundation.com</a></p>
+            
+            <div class="margin-3"></div>
+            
             <img src="<?php bloginfo('template_url') ?>/assets/img/contact.svg" alt="">
         </div>
     </div>

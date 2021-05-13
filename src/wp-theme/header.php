@@ -14,7 +14,7 @@
 		<link href="webclip.png" rel="apple-touch-icon"/>
 		<?php wp_head(); ?>
 	</head>
-	<body class="body <?php if (is_home()) { echo ' has-bg'; } elseif (is_page_template( 'page-contact.php' )) { echo 'bg--blue'; } elseif (is_page_template( 'page-partners.php' )) { echo 'bg--green'; } ?>">
+	<body class="body <?php if (is_home()) { echo ' has-bg'; } elseif (is_page_template( 'page-contact.php' )) { echo 'bg--blue'; } elseif (is_page_template( 'page-partners.php' ) || is_page_template( 'page-news.php' ) || is_page_template( 'page-projects.php' )) { echo 'bg--green'; } ?>">
 		
 		<nav class="navbar">
 			<a href="<?php echo get_home_url(); ?>" class="navbar-logo">ForestR Foundation</a>
