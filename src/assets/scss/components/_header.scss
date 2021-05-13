@@ -18,13 +18,14 @@
         }
     }
     .hamburger {
+        padding-right: 0;
         .hamburger-box {
-            width: 4.75rem;
-            height: 2.2rem;
+            width: 4rem;
+            height: 1.8rem;
             .hamburger-inner,
             .hamburger-inner:before,
             .hamburger-inner:after {
-                width: 4.75rem;
+                width: 4rem;
                 height: 5px;
                 border-radius: 0;
                 background-color: $green;
@@ -83,14 +84,17 @@
                 line-height: 100px;
             }
             @media screen  and (max-width: $mobile) {
-                font-size: 67px;
-                line-height: 75px;
+                font-size: 57px;
+                line-height: 57px;
             }
             a {
                 white-space: nowrap;
                 background: white;
                 border-radius: 4rem;
                 padding: 0 2rem;
+                @media screen  and (max-width: $mobile) {
+                    padding: 0;
+                }
             }
             &:hover {
                 a {
