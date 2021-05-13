@@ -25,6 +25,9 @@ form {
             background: $green;
             color: $white;
             max-width: 30%;
+            @media screen and (max-width: $tablet) {
+                max-width: 100%;
+            }
             &.submit-white {
                 background: $white;
                 color: $blue;
