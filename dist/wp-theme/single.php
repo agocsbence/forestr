@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
 <section class="single-section first-section">
     <h1 class="lead"><?php the_title(); ?></h1>
